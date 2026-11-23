@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FERREIRA BRITES Dario</title>
+<meta name="description" content="Dario Ferreira Brites, étudiant en double diplôme ingénieur-architecte (ESTP / ENSAPLV).">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%23111'/><text x='32' y='43' font-size='30' text-anchor='middle' fill='white' font-family='serif'>FB</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="mark" href="#accueil" aria-label="Accueil">FERREIRA BRITES <span>Dario</span></a>
+  <nav aria-label="Navigation principale">
+    <a href="#accueil" data-route="accueil">Accueil</a>
+    <a href="#cv" data-route="cv">CV</a>
+    <a href="#portfolio" data-route="portfolio">Portfolio</a>
+    <a href="#contact" data-route="contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ACCUEIL -->
+  <section id="accueil" class="view" data-title="Accueil">
+    <div class="hero">
+      <p class="role">Ingénieur &amp; architecte en formation</p>
+      <h1>FERREIRA BRITES <em>Dario</em></h1>
+      <p class="lead">Étudiant en double diplôme à l’ESTP et à l’ENSA Paris-La Villette, je cherche à faire dialoguer la rigueur de l’ingénieur et le regard de l’architecte : comprendre comment un bâtiment se calcule, se dessine et se construit.</p>
+    </div>
+
+    <div class="facts">
+      <div><h2>Double cursus</h2><p>Ingénieur ESTP et architecte ENSAPLV, pour penser structure et espace d’un même geste.</p></div>
+      <div><h2>Outils</h2><p>AutoCAD, Revit, Python, dessin et illustration sur tablette graphique.</p></div>
+      <div><h2>Terrain</h2><p>Chantiers aéroportuaires et voirie avec le groupe NGE, été 2026.</p></div>
+    </div>
+
+    <div class="entries">
+      <a class="entry" href="#portfolio">
+        <img src="assets/portfolio/p-01.jpg" alt="Couverture du portfolio" loading="lazy">
+        <span class="cap"><b>Portfolio</b><i>Projets, dessins et recherches</i></span>
+      </a>
+      <a class="entry entry-cv" href="#cv">
+        <img src="assets/cv.png" alt="Aperçu du CV" loading="lazy">
+        <span class="cap"><b>Curriculum vitae</b><i>Parcours et compétences</i></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CV -->
+  <section id="cv" class="view" data-title="CV">
+    <div class="head">
+      <h2>Curriculum vitae</h2>
+      <a class="btn" href="assets/FERREIRA_BRITES_Dario_CV.pdf" download>Télécharger le PDF</a>
+    </div>
+    <figure class="cv-sheet">
+      <a href="assets/FERREIRA_BRITES_Dario_CV.pdf" target="_blank" rel="noopener" aria-label="Ouvrir le CV en PDF">
+        <img src="assets/cv.png" alt="Curriculum vitae de Dario Ferreira Brites">
+      </a>
+    </figure>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="view" data-title="Portfolio">
+    <div class="head">
+      <h2>Portfolio</h2>
+      <a class="btn" href="assets/FERREIRA_BRITES_Dario_Portfolio.pdf" download>Télécharger le PDF (41 Mo)</a>
+    </div>
+    <p class="hint">Touchez ou cliquez une page pour l’agrandir. Les pages sont affichées en haute définition.</p>
+    <div id="pages" class="pages"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="view" data-title="Contact">
+    <div class="head"><h2>Contact</h2></div>
+    <ul class="contact">
+      <li><span>E-mail</span><a href="mailto:dario.ferreirabrites@gmail.com">dario.ferreirabrites@gmail.com</a></li>
+      <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/VOTRE-IDENTIFIANT" target="_blank" rel="noopener">linkedin.com/in/VOTRE-IDENTIFIANT</a></li>
+      <li><span>Téléphone</span><a href="tel:+33612492782">06 12 49 27 82</a></li>
+      <li><span>Localisation</span><b>Paris</b></li>
+    </ul>
+    <p class="seek">Je recherche un stage de 10 semaines en bureau d’études, études techniques, conception ou études de prix, du 28 juin au 30 septembre 2026.</p>
+  </section>
+</main>
+
+<footer>© <span id="y"></span> FERREIRA BRITES Dario</footer>
+
+<div id="lb" class="lb" hidden role="dialog" aria-modal="true" aria-label="Visionneuse">
+  <button class="lb-x" aria-label="Fermer">×</button>
+  <button class="lb-p" aria-label="Page précédente">‹</button>
+  <div class="lb-stage"><img id="lb-img" alt=""></div>
+  <button class="lb-n" aria-label="Page suivante">›</button>
+  <span id="lb-c" class="lb-c"></span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

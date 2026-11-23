@@ -1,0 +1,18 @@
+PUBLIER LE SITE GRATUITEMENT (2 minutes, sans code)
+1. Allez sur https://app.netlify.com/drop (compte gratuit, ou "Deploy manually").
+2. Glissez-déposez tout le dossier "site" (celui qui contient index.html).
+3. Netlify donne une adresse du type https://xxxx.netlify.app ; renommez-la dans
+   Site configuration > Change site name (ex. dario-ferreira-brites.netlify.app).
+4. Transformez cette adresse en QR code (ex. qrcode-monkey.com, gratuit).
+
+CONFIDENTIALITE
+- <meta robots noindex>, robots.txt et _headers (X-Robots-Tag) demandent aux moteurs de ne pas indexer.
+- Ne partagez le lien que par QR code / message direct. Ne le publiez pas sur un site public.
+- Choisissez un nom d'adresse peu devinable.
+
+A PERSONNALISER
+- LinkedIn : remplacer VOTRE-IDENTIFIANT dans index.html (section Contact).
+- CV : remplacer assets/cv.png et assets/FERREIRA_BRITES_Dario_CV.pdf par votre CV PDF d'origine.
+- Portfolio : si le PDF change, regenerer les pages :
+  pdftoppm -jpeg -jpegopt quality=82 -scale-to-x 2200 -scale-to-y -1 portfolio.pdf assets/portfolio/p
+  puis ajuster TOTAL dans script.js.
